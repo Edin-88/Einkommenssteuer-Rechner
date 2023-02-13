@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <title>Document</title>
+</head>
+<body>
+    <form onsubmit="return false">
+    <!-- header -->
+   <header>
+    <h1>
+        Einkommenssteuerrechner
+    </h1>
+   </header>
+
+   <!-- main -->
+   <main>
+    <!-- Zu Berechnendes Jahr: 2019 - 2022 möglich -->
+    <section class="jahresAuswahl">
+        <h2>
+            Wählen Sie bitte das zu berechnendes Jahr :
+        </h2>
+        <input type="radio" name="Jahr" id="jahr2022" checked>
+        <label for="Jahr">2022</label>
+        <input type="radio" name="Jahr" id="jahr2021">
+        <label for="Jahr">2021</label>
+        <input type="radio" name="Jahr" id="jahr2020">
+        <label for="Jahr">2020</label>
+    </section>
+    <!-- Einzelperson o. Splittingverfahren? -->
+    <section class="auswahlMethode">
+        <h2>
+            Wählen Sie bitte Einzelperson o. Splittingverfahren aus
+        </h2>
+        <input type="radio" name="berechnungsart" id="single">
+        <label for="Single">Einzelperson</label>
+        <input type="radio" name="berechnungsart" id="verheiratet">
+        <label for="verheiratet">Verheiratet (Splittingverf.)</label>
+    </section>
+    <!-- Jahreseinkommen Eingabe + Berechnung -->
+    <section class="jahresEinkommen">
+        <h2>
+            Zu versteuerndes Brutto-Jahreseinkommen:
+        </h2>
+        <input type="number" name="" placeholder="€" id="jahreseinkommen">
+        <button onclick="steuerBerechnen()">Jetzt Berechnen</button>
+    </section>
+   </main>
+
+   <!-- Footer -->
+   <footer>
+    <article>
+        <h2>Ihre Einkommenssteuer für das ausgewählte Jahr beträgt :</h2>
+        <p id="ergebnis"></p>
+    </article>
+   </footer>
+</form>
+   <script src="./assets/js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,88 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: "gilda";
+    src: url("../fonts/GildaDisplay-Regular.ttf");
+}
+
+body {
+    background-color: darkmagenta;
+    color: darkmagenta;
+    text-align: center;
+    font-family: "gilda";
+}
+
+header {
+    margin: 5vh 0;
+}
+
+section {
+    margin: 5vh 0;
+}
+
+h2 {
+    padding-bottom: 2vh;
+}
+
+label {
+    margin-right: 3vw;
+}
+
+input {
+    margin-right: 0.3vw;
+}
+
+form {
+	width: clamp(500px, 700px,  70vw);
+	margin: 5vw auto;
+	background-color: #e5e6eb;
+	border-radius: 13px;
+	padding: 1vh;
+	display: flex;
+	flex-direction: column;
+	box-shadow: 1px 1px 100px rgb(215, 94, 114);
+}
+
+button {
+    margin-left: 1vw;
+    margin-top: 1.5vh;
+    padding: 0.5vh 3vw;
+    border-radius: 20px;
+    background-color: darkmagenta;
+    color: #e5e6eb;
+    font-size: large;
+    border: none;
+}
+
+button:hover {
+    background-color: hotpink;
+    color: darkmagenta;
+}
+
+#verheiratet {
+    margin-left: 5vw;
+}
+
+#single {
+    margin-left: 3vw;
+}
+
+#jahreseinkommen {
+    text-align: center;
+    color: darkmagenta;
+    border-radius: 20px;
+    padding: 0.5vh 1vw;
+    font-size: large;
+    border: none;
+}
+
+#ergebnis {
+    color: olivedrab;
+    padding: 4vh 0;    
+    font-size: x-large;
+    font-weight: 900;
+}
